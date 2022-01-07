@@ -11,6 +11,11 @@ nameOverride: ""
 ##
 createNamespace: true
 
+## Create the necessary roles and role bindings for the operator to function.
+## Disable this if you have already created the necessary RBAC objects elsewhere.
+##
+createRBAC: true
+
 ## Provide OpenTelemetry Operator manager container image and resources.
 ##
 manager:
